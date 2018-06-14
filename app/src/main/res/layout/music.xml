@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="70dp"
+        android:orientation="horizontal"
+        android:id="@+id/backgroundmusic">
+        <TextView
+            android:text="背景音乐:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF000000"
+            android:textSize="15sp"/>
+        <RadioButton
+            android:id="@+id/openbackgroundmusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开"
+            android:textSize="15sp"
+            android:textColor="#FF000000"
+            android:checked="true" />
+        <RadioButton
+            android:id="@+id/closebackgroundmusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭"
+            android:textSize="15sp"
+            android:textColor="#FF000000" />
+    </RadioGroup>
+
+</LinearLayout>

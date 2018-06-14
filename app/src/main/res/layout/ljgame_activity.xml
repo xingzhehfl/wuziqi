@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/back_ground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:orientation="vertical">
+    <!--游戏信息-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <!--重新开始-->
+        <Button
+            android:id="@+id/restart_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新游戏"
+            android:textSize="15dp"/>
+        <include layout="@layout/music"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+        <!--玩家信息-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+                <!--白棋/甲方玩家名-->
+                <TextView
+                    android:id="@+id/a_name"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:text="甲方"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+                <!--玩家当前执子-->
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/a_name"
+                    android:background="@drawable/white_chess"
+                    android:contentDescription="@null" />
+            </RelativeLayout>
+            <!--分数记录-->
+            <TextView
+                android:id="@+id/white_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:text="Score : 0"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:background="@mipmap/vs"/>
+        </RelativeLayout>
+
+        <!--黑棋/乙方信息-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+                <!--乙方玩家名-->
+                <TextView
+                    android:id="@+id/b_name"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:text="乙方"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+                <!--当前执子-->
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/b_name"
+                    android:background="@drawable/black_chess"/>
+            </RelativeLayout>
+            <!--分数记录-->
+            <TextView
+                android:id="@+id/black_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+
+                android:text="Score : 0"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--重新开始-->
+    <com.example.hfl.wuziqi.LJFiveChessView
+        android:id="@+id/five_chess_view2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

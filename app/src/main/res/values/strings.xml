@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">五子棋游戏</string>
+    <string name="app_abouot">\t\t这是一款简单益智的五子棋小游戏,游戏的
+        规则非常简单,游戏双方各持黑白棋子的一种,只需要努力使自己的棋
+        子在棋盘上横着或者竖着或者斜对角线有五个同色棋子连成一条线,就
+        会取得游戏的胜利。\n\t\t赶快开始游戏吧</string>
+    <string name="choose_chess">选择执子</string>
+    <string name="first">先手</string>
+    <string name="second">后手</string>
+    <string name="player">玩家</string>
+    <string name="computer">电脑</string>
+</resources>
